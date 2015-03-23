@@ -1,0 +1,37 @@
+"Refract"
+{	
+	"$model" "1"
+	"$basetexture" "models/propellers/gold"
+	"$normalmap" "models/propellers/sphere_normal"
+	"$selfillum" "1"
+	
+	"$surfaceprop" "water"
+
+	"$envmap" "env_cubemap"
+	"$refractamount" "1"
+	
+	"$texscale" "[1 1]"
+
+	"$bumpframe" "1"
+	"$bumpscale" "4"
+	
+	"$texoffset" "[0 0]"
+	
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$normalmap"
+			"animatedtextureframenumvar" "$bumpframe"
+			"animatedtextureframerate" 24.00
+		}
+
+		"TextureTransform"
+		{
+			"translateVar" "$texoffset"
+			"scaleVar" "$texscale"
+			"resultVar" "$basetexturetransform"
+		}
+	}
+
+}

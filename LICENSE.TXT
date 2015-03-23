@@ -1,0 +1,35 @@
+TERMS AND CONDITIONS FOR USE & DISTRIBUTION OF THE PROPELLER SVN:
+
+By using these models, you acknowledge that you agree to all parts of this license. If you disagree
+with any part of this license, you forefit the right to use these models and agree to remove all
+copies of this model pack from your computer storage medium.
+
+There is NO WARRANTY, whether it be expressed or implied with this model subversion repository. And
+although the possibility is extremely remote, I cannot be held responsible for any damages that may
+occur by using this propeller subversion repository.
+
+As a user of the propeller subversion repository, you are entitled to enjoy the use of the repository
+for personal use ONLY. No part of this repository may be used for any commercial purpose, whether it
+be for profit or non-profit. You may NOT re-upload any part of this repository to any kind of file
+sharing, hosting, trading, bulletin board or hard copy (floppies, flash drives, optical discs or any
+other storage medium) with intent to redistribute it in any shape or form. You may NOT repackage any
+portion of this repository and claim you had something to do with it. This includes creating custom
+"packs" or "collections" that are compiled with other stuff for any reason.
+
+You ARE allowed to use these models in Source Engine maps, as long as the complete work remains free
+to download, and I am properly credited. If you would like to use these models in a mod, contact me
+for permission first.
+
+VALVE LICENSE NULLING CLAUSE:
+
+The Valve Corporation or its successors are not allowed to possess or host any part of this propeller
+subversion repository in any shape or form. The Valve Corporation or its successors also relinquish
+all rights to attempt to apply; Whether it be automatic or manual, any type of license to this work.
+
+In the circumstance that any portion of this propeller subversion repository is ever illegitimately
+stored by a 3rd party to the "Steam Workshop" or any other service provided by the Valve Corporation,
+All licenses they administer are null and void in regards to this work, whether or not this license
+is included with the portions stored on Valve Corporation servers.
+
+I reserve the right to modify this license at any time, for any reason as I see fit. You as a user
+are responsible for understanding the terms of this license.

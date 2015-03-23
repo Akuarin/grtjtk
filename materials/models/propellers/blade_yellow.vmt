@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/propellers/blade_yellow"
+	"$surfaceprop" "metal"
+}

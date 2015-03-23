@@ -1,0 +1,58 @@
+"gnome.run"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"^engines/sopwith/MotorhupmMO2.wav"
+}
+
+"gnome.blip"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"^engines/blip1a.wav"
+}
+
+"compressor.run"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_70dB"
+	"wave"			"^engines/eng1b.wav"
+}
+"hercules.max"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"engines/hercules_max.wav"
+}
+"meteor.idle"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"^engines/meteor_idle2.wav"
+}
+"merlin.idle"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"^engines/merlin_idle.wav"
+}
+"merlin.max"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"^engines/merlin_max.wav"
+}

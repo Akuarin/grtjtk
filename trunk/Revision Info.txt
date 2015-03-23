@@ -1,0 +1,81 @@
+9/15/2009 -
+
+REMOVED:
+Crankshaft4 (broken collision model)
+Clerget9c (old shitty model with ~19,500 polies)
+
+ADDED:
+Crankshaft4b (replaces crankshaft4, fixes collision model and balancing)
+Bentley BR.1 (replaces Clerget9c with 1/4 the amount of polygons @ ~5000)
+
+12/31/09 -
+
+ADDED:
+Discoball
+Discoball2
+
+12/21/2011 (SVN R25)
+
+ADD:
+ - New spawn menu ( [GMP]Wings )
+ - Reworked and reskinned wing models with better fabric texture.
+ - Changed path for new wing models to keep legacy models for now.
+
+DELETE:
+None.
+
+6/04/2012 (SVN R33)
+
+FIX:
+ - Removed materials from the models/propellers folder, no idea how they got there.
+
+ADD:
+ - New category in spawn list "[GMP]Engine".
+ - Entirely new set of cylinder heads with longer bores.
+ - Entirely new set of crankshafts with longer strokes.
+ - Recompiled piston to fix a bug and move it to a different directory.
+ 
+DELETE:
+ - Renamed old "Propeller Models" category to "[GMP]Legacy" to make it easier to find.
+ - engine/radial_cylinder01a.mdl(redundant)
+ - engine/radial_cylinder01b.mdl(useless, nothing to scale with it)
+ - engine/radial_piston01a.mdl(redundant)
+ - engine/radial_piston01b.mdl(useless, nothing to scale with it)
+ - All models in models/propellers/wings (redundant)
+ - engine/cylhead_2a.mdl (redundant, crap model)
+ - engine/crankshaft01.mdl (redundant)
+ 
+10/27/2012
+ 
+FIX:
+ - Converted to new GM13 addon format.
+ - Updated usage license.
+ - Fixed collision model on the 6 cylinder head.
+  
+3/25/2013
+FIX:
+ - All of the tools in this repository should work now.
+ - Fixed some typos in the spawn scripts.
+ADD:
+ - Added "COPY SPAWNLIST SCRIPTS.CMD" to the base folder, it copies
+    spawn lists to the correct place so you don't have to.
+ - Several gears (3, 6, 12 and 24 teeth.)
+ - Planetary gear (16 teeth for a 2.66:1 gear ratio with 6 tooth gear.)
+ - Planetary inner gear mount (mounts three 6 tooth gears for the inside of the planetary ring.)
+ 
+ 9/27/2013
+ 
+ADD:
+ - Added engine/crankshaft_e3.mdl (3 pin crank)
+ - Added engine/crankshaft_e5.mdl (5 pin crank)
+ - Added engine/crankshaft_61.mdl (1 pin short stroke crank)
+ - Added engine/crankshaft_62.mdl (2 pin short stroke crank)
+ - Added engine/crankshaft_64.mdl (4 pin short stroke crank)
+ - Added engine/cylhead_1h.mdl (1 cylinder short stroke head)
+ - Added engine/cylhead_2h.mdl (2 cylinder short stroke head)
+ - Added engine/cylhead_4h.mdl (4 cylinder short stroke head)
+ 
+ 10/05/14
+ 
+ ADD:
+  - Added engine/crankcase_v82.mdl (V8 crankcase)

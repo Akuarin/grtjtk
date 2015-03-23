@@ -1,0 +1,35 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/propellers/film_frames"
+	"$texscale" "[1 1]"
+	"$translucent" "1"
+	"$bumpmap" "models/propellers/film_frames_normal"
+
+	"$surfaceprop" "paper"
+	"$bumpframe" "0"
+	"$texoffset" "[0 0]"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 24.00
+		}
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texoffset"
+			"texturescrollrate" 1
+			"texturescrollangle" 270
+		}
+
+		"TextureTransform"
+		{
+			"translateVar" "$texoffset"
+			"scaleVar" "$texscale"
+			"resultVar" "$basetexturetransform"
+		}
+	}
+}

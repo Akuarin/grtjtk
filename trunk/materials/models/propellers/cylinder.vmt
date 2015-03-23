@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/propellers/cylinder"
+	"$bumpmap" "models/propellers/cylinder_normal"
+}

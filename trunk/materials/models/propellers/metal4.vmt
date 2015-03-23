@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/propellers/metal4"
+	"$surfaceprop" "metal"
+	"$bumpmap" "models/propellers/metal4_normal"
+}
+
+

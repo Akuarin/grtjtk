@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/propellers/film_frames2"
+	"$translucent" "1"
+	"$bumpmap" "models/propellers/film_frames2_normal"
+
+	"$surfaceprop" "paper"
+}

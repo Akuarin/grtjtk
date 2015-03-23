@@ -1,0 +1,57 @@
+Since people don't seem to be able to read my QA, I'll put this at the top:
+
+DO NOT UPLOAD THIS MODEL PACK, OR ANY PART OF IT TO THE STEAM WORKSHOP. I DO NOT CARE
+ABOUT IDIOTS THAT DON'T KNOW HOW TO USE A SVN REPOSITORY. DON'T FUCKING DO IT.
+
+Q/A Time!
+
+Q: Help! Your models aren't showing up in the spawn menu!
+A: In Garry's mod 13, legacy addons (that don't use the workshop system) don't have their spawn menus
+automatically copied over at runtime, so models won't show in the spawnlist. Navigate to the propellersvn
+folder and double click the "COPY SPAWN LISTS.CMD". It will automatically copy the spawnlist scripts
+to the correct location, after which you just need to restart the map you're playing on to see the new models.
+
+Q: Why don't you just use the Steam Workshop to avoid all of these problems with legacy addons?
+A: Because of Valve's license associated with the Workshop system. Anything you upload to the Workshop
+collectively becomes their intellectual property and they're then allowed to use it in any way they
+see fit, this includes making profit off of it and other idiotic things. The Propeller SVN will never
+be a part of the Steam Workshop system.
+
+Q: How do I use the Propeller Tool?
+A: Easy! All you need to do is spawn a propeller, take out the propeller tool and click in the center
+of the white + sign on the back of the propeller. Make sure you use a negative value (-35 is a good
+starting value.)
+
+Q: Some of your models have multiple skins (wings), how do I use the other skins?
+A: Look for a tool called "Skin Changer" on garrysmod.org. If not, turn cheats on and look at the model,
+then type "ent_fire !picker skin x" X being a number 1-9. Only a few of my models have multiple skins
+and they only have 2 or 3 skins maximum.
+
+Q: Why do some of your models have checkerboard patterns on them?
+A: Some of the plane parts use tile model pack textures. You can get them by either having
+the Phoenix SVN installed, or by having the tile model pack installed.
+
+Q: Why do the chrome pieces look matte grey or not have a full chrome effect?
+A: The chrome pieces rely on env_cubemaps in the map you're playing on. If the map doesn't
+have cubemaps, or has cubemaps that aren't built (type "buildcubemaps" in console) then the
+chrome won't show.
+
+Q: Whenever I spawn <insert model here> or lots of your models, I get bad framerates, how do I fix it?
+A: I assume you're probably running Garry's mod on an older machine and are getting poor performance
+in general. My first recommendadion is to buy a more modern computer, but if that's not possible then
+go into your video settings and turn some of the options down. You can also type these commands in
+the console to get a further frame rate boost:
+
+mat_motion_blur_enabled 0
+mat_bumpmap 0
+mat_specular 0
+
+Q: I see some models in your videos on Youtube that aren't in your model pack, where can I get them?
+A: Most likely they are there, they just aren't in the spawn menu. If you click the "Models"
+tab in the spawn menu and search, you should be able to find the ones that aren't there.
+
+Q: Hai, liek i wuz makin a pak wif models cuz i wanted to help ppl cuz dey cnat use svn, cna i include
+ur modelz plzzz!!! ur so coool nd ur models r useful nd it would maek dem moar popular!!!!!
+A: First off, learn how to spell. Second, please proceed to sodomize yourself with barbed wire.
+If unavailable, a section of lead pipe, or a retractable baton will also work. Third, I don't
+give a fuck on how popular my models get. Fourth, read LICENSE.TXT.

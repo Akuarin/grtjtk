@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/propellers/film_edge"
+	"$surfaceprop" "paper"
+	"$bumpmap" "models/propellers/film_edge_normal"
+}

@@ -233,9 +233,19 @@
 		"46"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_4.mdl"
+			"model"		"models/engine/crankcase_h4.mdl"
 		}
 		"47"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_4.mdl"
+		}
+		"48"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_h4.mdl"
+		}
+		"49"
 		{
 			"type"		"model"
 			"model"		"models/engine/oilpan_6.mdl"

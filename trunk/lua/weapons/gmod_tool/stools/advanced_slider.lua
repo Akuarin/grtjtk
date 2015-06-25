@@ -4,13 +4,18 @@ TOOL.Name = "Advanced Slider"
 TOOL.ClientConVar[ "entity1" ] = "example1"
 TOOL.ClientConVar[ "entity2" ] = "example2"
 TOOL.ClientConVar[ "axis" ] = "0 0 90"
+TOOL.ClientConVar[ "friction" ] = "0"
+TOOL.ClientConVar[ "spawnflags" ] = "0"
 
  if ( CLIENT ) then
 
-	language.Add( "Tool_advslider_name", "Advanced Slider" )
-	language.Add( "Tool_advslider_desc", "Makes non-shitty sliders" )
-	language.Add( "Tool_advslider_0", "Click a prop or something." )
-	language.Add( "Tool_advslider_1", "Now click some other piece of crap." )
+	language.Add( "Tool.advanced_slider.name", "Advanced Slider" )
+	language.Add( "Tool.advanced_slider.desc", "Makes non-shitty sliders" )
+	
+	language.Add( "Tool.advanced_slider.desc2", "How to use this tool: \n	1. Spawn two props.\n	2. Use the console command 'ent_setname <somename>' on each prop while looking at them.\n	3. Type the entity names you chose in the text boxes labelled 'First Entity' and 'Second Entity'.\n	4. Set any slider options you want to use.\n	5. Shoot the tool at wherever you want the slider origin to be and a second time to complete the slider.\n	\n	If you want to slider to the world, omit one of the entity names in the text box.\n" )
+	
+	language.Add( "Tool.advanced_slider.0", "Set your entity names in the console before using the tool!" )
+	language.Add( "Tool.advanced_slider.1", "Now click some other piece of crap." )
 
 end
 
@@ -34,10 +39,6 @@ function TOOL:LeftClick( trace )
 			return true
 		end
 		
-		-- Get client's CVars
-		local width = self:GetClientNumber( "width", 1.5 )
-		local material = self:GetClientInfo( "material" )
-		
 		-- Get information we're about to use
 		local Ent1, Ent2 = self:GetEnt( 1 ), self:GetEnt( 2 )
 		local Bone1, Bone2 = self:GetBone( 1 ), self:GetBone( 2 )
@@ -50,8 +51,9 @@ function TOOL:LeftClick( trace )
 				constraint:SetKeyValue(tostring( "attach1" ), tostring(self:GetClientInfo( "entity1" )))
 				constraint:SetKeyValue(tostring( "attach2" ), tostring( self:GetClientInfo( "entity2" )))
 				constraint:SetKeyValue(tostring( "slideaxis" ), tostring( constraint:GetNetworkOrigin() + Vector(self:GetClientInfo( "axis" ))))
-				print( constraint:GetNetworkOrigin())
-				constraint:SetKeyValue(tostring( "spawnflags" ), tostring( "1"))
+				--print( constraint:GetNetworkOrigin())
+				constraint:SetKeyValue(tostring( "slidefriction" ), tonumber(self:GetClientInfo( "friction" ) * 4))
+				constraint:SetKeyValue(tostring( "spawnflags" ), tonumber(self:GetClientInfo( "spawnflags" )))
 				
 			end
 			
@@ -80,74 +82,7 @@ end
 
 function TOOL:RightClick( trace )
 
-	if ( self:GetOperation() == 1 ) then return false end
-
-	local iNum = self:NumObjects()
-
-	local Phys = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone )
-	self:SetObject( 1, trace.Entity, trace.HitPos, Phys, trace.PhysicsBone, trace.HitNormal )
-	
-	local tr = {}
-	tr.start = trace.HitPos
-	tr.endpos = tr.start + ( trace.HitNormal * 16384 )
-	tr.filter = {}
-	tr.filter[ 1 ] = self:GetOwner()
-	if ( IsValid( trace.Entity ) ) then
-		tr.filter[ 2 ] = trace.Entity
-	end
-	
-	local tr = util.TraceLine( tr )
-	if ( !tr.Hit ) then
-		self:ClearObjects()
-		return
-	end
-	
-	-- Don't try to constrain world to world
-	if ( trace.HitWorld && tr.HitWorld ) then
-		self:ClearObjects()
-		return
-	end
-	
-	if ( IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then
-		self:ClearObjects()
-		return
-	end
-	if ( IsValid( tr.Entity ) && tr.Entity:IsPlayer() ) then
-		self:ClearObjects()
-		return
-	end
-
-	local Phys2 = tr.Entity:GetPhysicsObjectNum( tr.PhysicsBone )
-	self:SetObject( 2, tr.Entity, tr.HitPos, Phys2, tr.PhysicsBone, trace.HitNormal )
-	
-	if ( CLIENT ) then
-		self:ClearObjects()
-		return true
-	end
-	
-	local width = self:GetClientNumber( "width", 1.5 )
-	local material = self:GetClientInfo( "material" )
-		
-	-- Get information we're about to use
-	local Ent1, Ent2 = self:GetEnt( 1 ), self:GetEnt( 2 )
-	local Bone1, Bone2 = self:GetBone( 1 ), self:GetBone( 2 )
-	local LPos1, LPos2 = self:GetLocalPos( 1 ),	self:GetLocalPos( 2 )
-
-	local constraint, rope = constraint.Slider( Ent1, Ent2, Bone1, Bone2, LPos1, LPos2, width, material )
-
-	undo.Create( "Slider" )
-		undo.AddEntity( constraint )
-		if ( IsValid( rope ) ) then undo.AddEntity( rope ) end
-		undo.SetPlayer( self:GetOwner() )
-	undo.Finish()
-	
-	self:GetOwner():AddCleanup( "ropeconstraints", constraint )
-	self:GetOwner():AddCleanup( "ropeconstraints", rope )
-
-	-- Clear the objects so we're ready to go again
-	self:ClearObjects()
-	
-	return true
+	return
 
 end
 
@@ -156,7 +91,7 @@ function TOOL:Reload( trace )
 	if ( !IsValid( trace.Entity ) || trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
-	return constraint.RemoveConstraints( trace.Entity, "Slider" )
+	return constraint.RemoveConstraints( trace.Entity, "Advanced Slider" )
 	
 end
 
@@ -170,12 +105,22 @@ local ConVarsDefault = TOOL:BuildConVarList()
 
 function TOOL.BuildCPanel( CPanel )
 
-	CPanel:AddControl( "Header", { Description = "#tool.slider.help" } )
+	CPanel:AddControl( "Label", { Text = "How to use this tool: \n	1. Spawn two props." } )
+	CPanel:AddControl( "Label", { Text = "2. Use the console command 'ent_setname <somename>' on each prop while looking at them." } )
+	CPanel:AddControl( "Label", { Text = "3. Type the entity names you chose in the text boxes labelled 'First Entity' and 'Second Entity'.\n	4. Set any slider options you want to use." } )
+	CPanel:AddControl( "Label", { Text = "5. Shoot the tool at wherever you want the slider origin to be and a second time to complete the slider.\n\n	If you want to slider to the world, omit one of the entity names in the text box." } )
 	
-	CPanel:AddControl( "ComboBox", { MenuButton = 1, Folder = "slider", Options = { [ "#preset.default" ] = ConVarsDefault }, CVars = table.GetKeys( ConVarsDefault ) } )
+	--CPanel:AddControl( "ComboBox", { MenuButton = 1, Folder = "slider", Options = { [ "#preset.default" ] = ConVarsDefault }, CVars = table.GetKeys( ConVarsDefault ) } )
 
 	CPanel:AddControl( "TextBox", { Label = "First Entity", Command = "advanced_slider_entity1", MaxLenth = "20" } )
 	CPanel:AddControl( "TextBox", { Label = "Second Entity", Command = "advanced_slider_entity2", MaxLenth = "20" } )
 	CPanel:AddControl( "TextBox", { Label = "Slider Axis", Command = "advanced_slider_axis", MaxLenth = "20" } )
+	CPanel:AddControl( "TextBox", { Label = "Slider Friction", Command = "advanced_slider_friction", MaxLenth = "20" } )
+	CPanel:AddControl( "ComboBox", { Label = "Spawn Flags", Options = list.Get( "SliderSpawnFlags" ) } )
 
 end
+
+list.Set( "SliderSpawnFlags", "Collide", { advanced_slider_spawnflags = "0" } )
+list.Set( "SliderSpawnFlags", "No Collide Until Break", { advanced_slider_spawnflags = "1" } )
+list.Set( "SliderSpawnFlags", "Limit Endpoints (use in conjunction with slider axis)", { advanced_slider_spawnflags = "2" } )
+list.Set( "SliderSpawnFlags", "No Collide Until Break and Limit Endpoints", { advanced_slider_spawnflags = "3" } )

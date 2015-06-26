@@ -6,6 +6,10 @@ TOOL.ClientConVar[ "entity2" ] = "example2"
 TOOL.ClientConVar[ "axis" ] = "0 0 90"
 TOOL.ClientConVar[ "friction" ] = "0"
 TOOL.ClientConVar[ "spawnflags" ] = "0"
+TOOL.ClientConVar[ "forcelimit" ] = "0"
+TOOL.ClientConVar[ "torquelimit" ] = "0"
+TOOL.ClientConVar[ "breaksound" ] = "Plastic_Box.Break"
+TOOL.ClientConVar[ "teleportfollowdistance" ] = "0"
 
  if ( CLIENT ) then
 
@@ -54,6 +58,10 @@ function TOOL:LeftClick( trace )
 				--print( constraint:GetNetworkOrigin())
 				constraint:SetKeyValue(tostring( "slidefriction" ), tonumber(self:GetClientInfo( "friction" ) * 4))
 				constraint:SetKeyValue(tostring( "spawnflags" ), tonumber(self:GetClientInfo( "spawnflags" )))
+				constraint:SetKeyValue(tostring( "forcelimit" ), tonumber(self:GetClientInfo( "forcelimit" )))
+				constraint:SetKeyValue(tostring( "torquelimit" ), tonumber(self:GetClientInfo( "torquelimit" )))
+				constraint:SetKeyValue(tostring( "breaksound" ), tostring( self:GetClientInfo( "breaksound" )))
+				constraint:SetKeyValue(tostring( "teleportfollowdistance" ), tonumber( self:GetClientInfo( "teleportfollowdistance" )))
 				
 			end
 			
@@ -117,7 +125,11 @@ function TOOL.BuildCPanel( CPanel )
 	CPanel:AddControl( "TextBox", { Label = "Slider Axis", Command = "advanced_slider_axis", MaxLenth = "20" } )
 	CPanel:AddControl( "TextBox", { Label = "Slider Friction", Command = "advanced_slider_friction", MaxLenth = "20" } )
 	CPanel:AddControl( "ComboBox", { Label = "Spawn Flags", Options = list.Get( "SliderSpawnFlags" ) } )
-
+	CPanel:AddControl( "TextBox", { Label = "Slider Force Limit", Command = "advanced_slider_forcelimit", MaxLenth = "20" } )
+	CPanel:AddControl( "TextBox", { Label = "Slider Torque Limit", Command = "advanced_slider_torquelimit", MaxLenth = "20" } )
+	CPanel:AddControl( "TextBox", { Label = "Break Sound", Command = "advanced_slider_breaksound", MaxLenth = "80" } )
+	CPanel:AddControl( "TextBox", { Label = "Teleport Follow Dist", Command = "advanced_slider_teleportfollowdistance", MaxLenth = "20" } )
+	
 end
 
 list.Set( "SliderSpawnFlags", "Collide", { advanced_slider_spawnflags = "0" } )

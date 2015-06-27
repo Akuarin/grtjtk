@@ -14,12 +14,9 @@ TOOL.ClientConVar[ "teleportfollowdistance" ] = "0"
  if ( CLIENT ) then
 
 	language.Add( "Tool.advanced_slider.name", "Advanced Slider" )
-	language.Add( "Tool.advanced_slider.desc", "Makes non-shitty sliders" )
-	
-	language.Add( "Tool.advanced_slider.desc2", "How to use this tool: \n	1. Spawn two props.\n	2. Use the console command 'ent_setname <somename>' on each prop while looking at them.\n	3. Type the entity names you chose in the text boxes labelled 'First Entity' and 'Second Entity'.\n	4. Set any slider options you want to use.\n	5. Shoot the tool at wherever you want the slider origin to be and a second time to complete the slider.\n	\n	If you want to slider to the world, omit one of the entity names in the text box.\n" )
-	
-	language.Add( "Tool.advanced_slider.0", "Set your entity names in the console before using the tool!" )
-	language.Add( "Tool.advanced_slider.1", "Now click some other piece of crap." )
+	language.Add( "Tool.advanced_slider.desc", "Makes non-shitty sliders." )
+	language.Add( "Tool.advanced_slider.0", "Click on the first entity." )
+	language.Add( "Tool.advanced_slider.1", "Now click something else." )
 
 end
 
@@ -47,6 +44,9 @@ function TOOL:LeftClick( trace )
 		local Ent1, Ent2 = self:GetEnt( 1 ), self:GetEnt( 2 )
 		local Bone1, Bone2 = self:GetBone( 1 ), self:GetBone( 2 )
 		local LPos1, LPos2 = self:GetLocalPos( 1 ), self:GetLocalPos( 2 )
+		
+		Ent1:SetKeyValue(tostring( "targetname" ), tostring(self:GetClientInfo( "entity1" )))
+		Ent2:SetKeyValue(tostring( "targetname" ), tostring(self:GetClientInfo( "entity2" )))
 		
 		local constraint = ents.Create( "phys_slideconstraint" )
 			if constraint:IsValid() then
@@ -114,9 +114,9 @@ local ConVarsDefault = TOOL:BuildConVarList()
 function TOOL.BuildCPanel( CPanel )
 
 	CPanel:AddControl( "Label", { Text = "How to use this tool: \n	1. Spawn two props." } )
-	CPanel:AddControl( "Label", { Text = "2. Use the console command 'ent_setname <somename>' on each prop while looking at them." } )
-	CPanel:AddControl( "Label", { Text = "3. Type the entity names you chose in the text boxes labelled 'First Entity' and 'Second Entity'.\n	4. Set any slider options you want to use." } )
-	CPanel:AddControl( "Label", { Text = "5. Shoot the tool at wherever you want the slider origin to be and a second time to complete the slider.\n\n	If you want to slider to the world, omit one of the entity names in the text box." } )
+	CPanel:AddControl( "Label", { Text = "2. Change the names in 'First Entity' and 'Second Entity' to avoid conflicts." } )
+	CPanel:AddControl( "Label", { Text = "3. Set any slider options you want to use." } )
+	CPanel:AddControl( "Label", { Text = "4. Shoot the tool at whichever two entities you want slidered. The slider origin will be on the first prop.\n\n	If you want to slider to the world, omit one of the entity names in the text box." } )
 	
 	--CPanel:AddControl( "ComboBox", { MenuButton = 1, Folder = "slider", Options = { [ "#preset.default" ] = ConVarsDefault }, CVars = table.GetKeys( ConVarsDefault ) } )
 

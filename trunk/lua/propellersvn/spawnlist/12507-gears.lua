@@ -52,7 +52,7 @@ return [[
 			"type"		"model"
 			"model"		"models/gears/helical_6_16.mdl"
 		}
-		""
+		"10"
 		{
 			"type"		"model"
 			"model"		"models/gears/helical_6r_16.mdl"

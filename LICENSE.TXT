@@ -1,7 +1,7 @@
 TERMS AND CONDITIONS FOR USE & DISTRIBUTION OF THE PROPELLER SVN:
 
 By using these models, you acknowledge that you agree to all parts of this license. If you disagree
-with any part of this license, you forefit the right to use these models and agree to remove all
+with any part of this license, you forfeit the right to use these models and agree to remove all
 copies of this model pack from your computer storage medium.
 
 There is NO WARRANTY, whether it be expressed or implied with this model subversion repository. And

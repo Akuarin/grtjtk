@@ -5,11 +5,19 @@ ABOUT IDIOTS THAT DON'T KNOW HOW TO USE A SVN REPOSITORY. DON'T FUCKING DO IT.
 
 Q/A Time!
 
+Q:  Why are there two Propeller SVN model lists in the prop menu?
+A: I've added code to automatically populate the spawn menu in the latest SVN revision. This means that the
+scripts in settings/spawnlist are no longer required under most circumstances. You can go in and manually delete
+the scripts in garrysmod/settings/spawnlist to stop the duplicate list problem.
+
 Q: Help! Your models aren't showing up in the spawn menu!
-A: In Garry's mod 13, legacy addons (that don't use the workshop system) don't have their spawn menus
-automatically copied over at runtime, so models won't show in the spawnlist. Navigate to the propellersvn
-folder and double click the "COPY SPAWN LISTS.CMD". It will automatically copy the spawnlist scripts
-to the correct location, after which you just need to restart the map you're playing on to see the new models.
+A: For whatever reason, the code that automatically populates the spawn menu with my model pack isn't working.
+The most common reason would be that Garry updated Gmod and broke something. Other common causes would
+be that you got my models from a source other than the official Propeller SVN and the illiterate idiot that repackaged
+my content fucked up and didn't include everything. I recommend re-downloading the SVN from the new repo, or
+download the repo if you don't already have it and delete the butchered mess you downloaded from elsewhere.
+
+I'd also recommend you sodomize the person that fed you said garbage with a retractable baton wrapped in razor wire.
 
 Q: Why don't you just use the Steam Workshop to avoid all of these problems with legacy addons?
 A: Because of Valve's license associated with the Workshop system. Anything you upload to the Workshop
@@ -22,14 +30,23 @@ A: Easy! All you need to do is spawn a propeller, take out the propeller tool an
 of the white + sign on the back of the propeller. Make sure you use a negative value (-35 is a good
 starting value.)
 
+Q: How do I used the Advanced Rope/Slider Tools?
+A: The Advanced Rope tool is currently in alpha and doesn't work properly, so I don't recommend using it. The
+Advanced Slider Tool is basically like making a slider in the Hammer map editor, all of the useful options are
+exposed for the user to fiddle with. The vectors for the slide axis are absolute to the world and are not relative
+to the player to make creating sliders easier.
+
 Q: Some of your models have multiple skins (wings), how do I use the other skins?
-A: Look for a tool called "Skin Changer" on garrysmod.org. If not, turn cheats on and look at the model,
-then type "ent_fire !picker skin x" X being a number 1-9. Only a few of my models have multiple skins
+A: I've included a skin changer tool, which should be in the tools list under the "Render" tab. You can adjust
+the slider and fire at the prop to change the skin. You can also use the console if sv_cheats is 1 by doing:
+
+Look at the model, then type "ent_fire !picker skin x" X being a number 1-9. Only a few of my models have multiple skins
 and they only have 2 or 3 skins maximum.
 
 Q: Why do some of your models have checkerboard patterns on them?
-A: Some of the plane parts use tile model pack textures. You can get them by either having
-the Phoenix SVN installed, or by having the tile model pack installed.
+A: Some of my early models used textures from the "Tile Model Pack". This is now integrated into Garry's Mod
+and you shouldn't have an issue. If there's a transparent checkerboard over a visible texture, this means that
+cubemaps in the map are broken.
 
 Q: Why do the chrome pieces look matte grey or not have a full chrome effect?
 A: The chrome pieces rely on env_cubemaps in the map you're playing on. If the map doesn't
@@ -38,7 +55,7 @@ chrome won't show.
 
 Q: Whenever I spawn <insert model here> or lots of your models, I get bad framerates, how do I fix it?
 A: I assume you're probably running Garry's mod on an older machine and are getting poor performance
-in general. My first recommendadion is to buy a more modern computer, but if that's not possible then
+in general. My first recommendation is to buy a more modern computer, but if that's not possible then
 go into your video settings and turn some of the options down. You can also type these commands in
 the console to get a further frame rate boost:
 

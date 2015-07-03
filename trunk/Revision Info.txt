@@ -1,81 +1,96 @@
-9/15/2009 -
+9/15/2009
 
-REMOVED:
-Crankshaft4 (broken collision model)
-Clerget9c (old shitty model with ~19,500 polies)
+	REMOVED:
+		- Crankshaft4 (broken collision model)
+		- Clerget9c (old shitty model with ~19,500 polies)
 
-ADDED:
-Crankshaft4b (replaces crankshaft4, fixes collision model and balancing)
-Bentley BR.1 (replaces Clerget9c with 1/4 the amount of polygons @ ~5000)
+	ADDED:
+		- Crankshaft4b (replaces crankshaft4, fixes collision model and balancing)
+		- Bentley BR.1 (replaces Clerget9c with 1/4 the amount of polygons @ ~5000)
 
-12/31/09 -
+12/31/09
 
-ADDED:
-Discoball
-Discoball2
+	ADDED:
+		- Two types of discoball model, one with square mirrors and one with triangles.
 
-12/21/2011 (SVN R25)
+12/21/2011
 
-ADD:
- - New spawn menu ( [GMP]Wings )
- - Reworked and reskinned wing models with better fabric texture.
- - Changed path for new wing models to keep legacy models for now.
+	ADD:
+		- New spawn menu ( [GMP]Wings )
+		- Reworked and reskinned wing models with better fabric texture.
+		- Changed path for new wing models to keep legacy models for now.
 
-DELETE:
-None.
+6/04/2012
 
-6/04/2012 (SVN R33)
+	FIX:
+		- Removed materials from the models/propellers folder, no idea how they got there.
 
-FIX:
- - Removed materials from the models/propellers folder, no idea how they got there.
-
-ADD:
- - New category in spawn list "[GMP]Engine".
- - Entirely new set of cylinder heads with longer bores.
- - Entirely new set of crankshafts with longer strokes.
- - Recompiled piston to fix a bug and move it to a different directory.
+	ADD:
+		- New category in spawn list "[GMP]Engine".
+		- Entirely new set of cylinder heads with longer bores.
+		- Entirely new set of crankshafts with longer strokes.
+		- Recompiled piston to fix a bug and move it to a different directory.
  
-DELETE:
- - Renamed old "Propeller Models" category to "[GMP]Legacy" to make it easier to find.
- - engine/radial_cylinder01a.mdl(redundant)
- - engine/radial_cylinder01b.mdl(useless, nothing to scale with it)
- - engine/radial_piston01a.mdl(redundant)
- - engine/radial_piston01b.mdl(useless, nothing to scale with it)
- - All models in models/propellers/wings (redundant)
- - engine/cylhead_2a.mdl (redundant, crap model)
- - engine/crankshaft01.mdl (redundant)
+	DELETE:
+		- Renamed old "Propeller Models" category to "[GMP]Legacy" to make it easier to find.
+		- engine/radial_cylinder01a.mdl(redundant)
+		- engine/radial_cylinder01b.mdl(useless, nothing to scale with it)
+		- engine/radial_piston01a.mdl(redundant)
+		- engine/radial_piston01b.mdl(useless, nothing to scale with it)
+		- All models in models/propellers/wings (redundant)
+		- engine/cylhead_2a.mdl (redundant, crap model)
+		- engine/crankshaft01.mdl (redundant)
  
 10/27/2012
  
-FIX:
- - Converted to new GM13 addon format.
- - Updated usage license.
- - Fixed collision model on the 6 cylinder head.
+	FIX:
+		- Converted to new GM13 addon format.
+		- Updated usage license.
+		- Fixed collision model on the 6 cylinder head.
   
 3/25/2013
-FIX:
- - All of the tools in this repository should work now.
- - Fixed some typos in the spawn scripts.
-ADD:
- - Added "COPY SPAWNLIST SCRIPTS.CMD" to the base folder, it copies
-    spawn lists to the correct place so you don't have to.
- - Several gears (3, 6, 12 and 24 teeth.)
- - Planetary gear (16 teeth for a 2.66:1 gear ratio with 6 tooth gear.)
- - Planetary inner gear mount (mounts three 6 tooth gears for the inside of the planetary ring.)
+
+	FIX:
+		- All of the tools in this repository should work now.
+		- Fixed some typos in the spawn scripts.
+		
+	ADD:
+		- Added "COPY SPAWNLIST SCRIPTS.CMD" to the base folder, it copies
+		  spawn lists to the correct place so you don't have to.
+		- Several gears (3, 6, 12 and 24 teeth.)
+		- Planetary gear (16 teeth for a 2.66:1 gear ratio with 6 tooth gear.)
+		- Planetary inner gear mount (mounts three 6 tooth gears for the inside of the planetary ring.)
  
- 9/27/2013
+9/27/2013
  
-ADD:
- - Added engine/crankshaft_e3.mdl (3 pin crank)
- - Added engine/crankshaft_e5.mdl (5 pin crank)
- - Added engine/crankshaft_61.mdl (1 pin short stroke crank)
- - Added engine/crankshaft_62.mdl (2 pin short stroke crank)
- - Added engine/crankshaft_64.mdl (4 pin short stroke crank)
- - Added engine/cylhead_1h.mdl (1 cylinder short stroke head)
- - Added engine/cylhead_2h.mdl (2 cylinder short stroke head)
- - Added engine/cylhead_4h.mdl (4 cylinder short stroke head)
+	ADD:
+		- Added engine/crankshaft_e3.mdl (3 pin crank)
+		- Added engine/crankshaft_e5.mdl (5 pin crank)
+		- Added engine/crankshaft_61.mdl (1 pin short stroke crank)
+		- Added engine/crankshaft_62.mdl (2 pin short stroke crank)
+		- Added engine/crankshaft_64.mdl (4 pin short stroke crank)
+		- Added engine/cylhead_1h.mdl (1 cylinder short stroke head)
+		- Added engine/cylhead_2h.mdl (2 cylinder short stroke head)
+		- Added engine/cylhead_4h.mdl (4 cylinder short stroke head)
  
- 10/05/14
+10/05/14
  
- ADD:
-  - Added engine/crankcase_v82.mdl (V8 crankcase)
+	ADD:
+		- Added engine/crankcase_v82.mdl (V8 crankcase)
+  
+7/03/2015
+ 
+	CHANGE:
+		- Reformatted the changelog to make it easier to read.
+		- Changed SVN Repo URL from Google Code to Assembla due to Google Code shutting down.
+		- You're no longer required to manually copy the spawn lists to the settings folder to get the model menu to show.
+		
+	ADD:
+		- Added two new tools (Advanced Rope and Advanced Slider)
+		- Added gears/helical_6.mdl (6 tooth helical gear)
+		- Added gears/helical_6r.mdl (6 tooth helical gear reversed)
+		- Added gears/helical_6_16.mdl (6 tooth worm gear)
+		- Added gears/helical_6r_16.mdl (6 tooth worm gear reversed)
+	
+	DELETE:
+		- Removed obsolete Lua scripts that haven't worked in years.

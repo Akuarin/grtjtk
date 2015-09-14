@@ -9,9 +9,9 @@ TOOL.ClientConVar[ "propskin" ] = 0
 if (CLIENT) then
 
 	language.Add( "skin", "Skin" )
-	language.Add( "Tool_skin_name", "Skin" )
-	language.Add( "Tool_skin_desc", "Sets a props skin" )
-	language.Add( "Tool_skin_0", "Left click to set the prop's skin." )
+	language.Add( "Tool.skin.name", "Skin" )
+	language.Add( "Tool.skin.desc", "Sets a props skin" )
+	language.Add( "Tool.skin.0", "Left click to set the prop's skin." )
 	
 end
 
@@ -39,7 +39,7 @@ end
 function TOOL.BuildCPanel( CPanel )
 
 	// HEADER
-	CPanel:AddControl( "Header", {Text = "#Tool_skin_name", Description	= "#Tool_skin_desc" } )
+	CPanel:AddControl( "Header", {Text = "#Tool.skin.name", Description	= "#Tool.skin.desc" } )
 	
 	CPanel:AddControl("Slider",  {Label	= "#Skin Number",
 					Type	= "Integer",

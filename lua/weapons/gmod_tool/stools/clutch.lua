@@ -10,15 +10,15 @@
  
  if ( CLIENT ) then
 
-	language.Add( "Tool_clutch_name", "Wired clutch" )
-	language.Add( "Tool_clutch_desc", "Allows variable control over hinge friction" )
-	language.Add( "Tool_clutch_0", "Click a prop or something." )
-	language.Add( "Tool_clutch_1", "Now click some other piece of crap." )
-	language.Add( "Tool_clutch_2", "Place a control." )
+	language.Add( "Tool.clutch.name", "Wired clutch" )
+	language.Add( "Tool.clutch.desc", "Allows variable control over hinge friction" )
+	language.Add( "Tool.clutch.0", "Click a prop or something." )
+	language.Add( "Tool.clutch.1", "Now click some other piece of crap." )
+	language.Add( "Tool.clutch.2", "Place a control." )
 	
-	language.Add( "Tool_clutch_forcelimit", "Force limit:" )
-	language.Add( "Tool_clutch_torquelimit", "Torque limit:" )
-	language.Add( "Tool_clutch_nocollide", "No collide:" )
+	language.Add( "Tool.clutch.forcelimit", "Force limit:" )
+	language.Add( "Tool.clutch.torquelimit", "Torque limit:" )
+	language.Add( "Tool.clutch.nocollide", "No collide:" )
 
 
 end
@@ -170,23 +170,23 @@ end
  
  function TOOL.BuildCPanel(panel)
 	panel:AddControl("CheckBox", {
-		Label = "#Tool_clutch_nocollide",
-		Command = "clutch_nocollide"
+		Label = "#Tool.clutch.nocollide",
+		Command = "clutch.nocollide"
 	})
 
 	panel:AddControl("Slider", {
-		Label = "#Tool_clutch_forcelimit",
+		Label = "#Tool.clutch.forcelimit",
 		Type = "Float",
 		Min = "0",
 		Max = "100000",
-		Command = "clutch_forcelimit"
+		Command = "clutch.forcelimit"
 	})	
 	panel:AddControl("Slider", {
-		Label = "#Tool_clutch_torquelimit",
+		Label = "#Tool.clutch.torquelimit",
 		Type = "Float",
 		Min = "0",
 		Max = "10000",
-		Command = "clutch_torquelimit"
+		Command = "clutch.torquelimit"
 	})	
 	
 end

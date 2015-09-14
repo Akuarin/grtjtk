@@ -4,13 +4,14 @@
     Purpose: Makes props simulate lift and drag like a wing
 
     Author: PackRat
+	Gmmod 13 port: GiGaBiTe
 
     Math for physics calcs adapted from the
     original wing script by ROBO_DONUT
 
     Code for Tool Menu by Exeption
 
-	Version 1.1, 14th Dec 2006
+	Version 3.1, 9/14/15
 
 ]]--
 
@@ -21,9 +22,10 @@ TOOL.ConfigName	= ""
 
 if ( CLIENT ) then
 
-    language.Add( "Tool_wing_name", "Wing Tool" )
-    language.Add( "Tool_wing_desc", "Changes a prop's physical properties to simulate the drag and lift of a wing." )
-    language.Add( "Tool_wing_0", "Primary: Create/Update Wing   Secondary: Copy Wing Settings" )
+    language.Add( "Tool.wing.name", "Wing Tool" )
+    language.Add( "Tool.wing.desc", "Changes a prop's physical properties to simulate the drag and lift of a wing." )
+    language.Add( "Tool.wing.0", "Primary: Create/Update Wing   Secondary: Copy Wing Settings" )
+	language.Add( "Undone.Wing", "Undone Wing" )
 
 end
 
@@ -32,11 +34,11 @@ wingToolData.wingArea            = 0.005
 wingToolData.airDensity    		= 1.225
 wingToolData.waterDensity         = 1000
 wingToolData.liftCoefficient        = 1
-wingToolData.dragCoefficient        = 0.6
+wingToolData.dragCoefficient        = 0.5
 
 TOOL.ClientConVar[ "lift" ] = wingToolData.liftCoefficient
 TOOL.ClientConVar[ "drag" ] = wingToolData.dragCoefficient
-TOOL.ClientConVar[ "area" ] = 0.5  -- meh this one is irrelevant anyway
+TOOL.ClientConVar[ "area" ] = 0.5
 TOOL.ClientConVar[ "include_area" ] = 0
 
 wingEnts = {}
@@ -45,7 +47,7 @@ wingTime = CurTime()
 
 function TOOL.BuildCPanel( CPanel )
 
-    CPanel:AddControl( "Header", { Text = "#Tool_wing_name", Description  = "#Tool_wing_desc" }  )
+    CPanel:AddControl( "Header", { Text = "#Tool.wing.name", Description  = "#Tool.wing.desc" }  )
     CPanel:AddControl( "Slider", { Label = "#Lift Coefficient", Type = "Float", Min = "0", Max = "20", Command = "wing_lift" } )
     CPanel:AddControl( "Slider", { Label = "#Drag Coefficient", Type = "Float", Min = "0", Max = "20", Command = "wing_drag" } )
     CPanel:AddControl( "Slider", { Label = "#Wing Area", Type = "Float", Min = "0", Max = "20", Command = "wing_area" } )
@@ -105,6 +107,16 @@ function TOOL:LeftClick( tr )
         user:SendLua( "surface.PlaySound( \"ambient/water/drip\"..math.random(1, 4)..\".wav\" )" )
     end
 
+	undo.Create( "Wing" )
+			undo.AddEntity( wingEnts[entid].ent )
+			undo.SetPlayer( self:GetOwner() )
+		undo.Finish()
+		
+		self:GetOwner():AddCleanup( "Wing", wingEnts[entid].ent )
+
+		-- Clear the objects so we're ready to go again
+		self:ClearObjects()
+	
     return true
 
 end

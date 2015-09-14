@@ -15,10 +15,10 @@ language.Add( "Tool.propeller.name", "Propeller Tool" )
 language.Add( "Tool.propeller.desc", "Causes a prop to become a Propeller." )
 language.Add( "Tool.propeller.0", "Left click to turn a prop into a Propeller." )
 language.Add( "Tool_propeller_eff", "Efficiency of Propeller" )
-language.Add( "Undone_propeller", "Undone Propeller" )
-language.Add( "Cleanup_propeller", "Propeller" )
-language.Add( "Cleaned_propeller", "Cleaned up Propeller" )
-language.Add( "sboxlimit_propeller", "You've reached the Propeller limit!" )
+language.Add( "Undone.propeller", "Undone Propeller" )
+language.Add( "Cleanup.propeller", "Propeller" )
+language.Add( "Cleaned.propeller", "Cleaned up Propeller" )
+language.Add( "sboxlimit.propeller", "You've reached the Propeller limit!" )
 
 end
 

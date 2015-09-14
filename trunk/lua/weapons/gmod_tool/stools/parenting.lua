@@ -5,12 +5,12 @@ TOOL.Command		= nil
 TOOL.ConfigName		= nil
 
 if CLIENT then
-	language.Add( "Tool_Parenting", "Parenting" )
-	language.Add( "Tool_Parenting_name", "Parenting stool" )
-	language.Add( "Tool_Parenting_desc", "Make parenting between two entity" )
-	language.Add( "Tool_Parenting_0", "Primary: Set Parent two entity Secondary: Parent player to entity Reload: Clear parent" )
-	language.Add( "Tool_Parenting_1", "Click on the second entity" )
-	language.Add( "Undone_Parenting", "Undone Parent" )
+	language.Add( "Tool.Parenting", "Parenting" )
+	language.Add( "Tool.Parenting.name", "Parenting stool" )
+	language.Add( "Tool.Parenting.desc", "Parents one entity to another" )
+	language.Add( "Tool.Parenting.0", "Primary: Set Parent two entity Secondary: Parent player to entity Reload: Clear parent" )
+	language.Add( "Tool.Parenting.1", "Click on the second entity" )
+	language.Add( "Undone.Parenting", "Undone Parent" )
 end
 
 function TOOL:LeftClick( trace )
@@ -46,6 +46,7 @@ function TOOL:LeftClick( trace )
 	end
 	
 	return true
+	
 
 end
 
@@ -68,3 +69,8 @@ function TOOL:Reload( trace )
 	return true
 end
 
+function TOOL.BuildCPanel( CPanel )
+
+	// HEADER
+	CPanel:AddControl( "Header", {Text = "#Tool.parenting.name", Description	= "#Tool.parenting.desc" } )
+end

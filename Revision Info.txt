@@ -94,3 +94,9 @@
 	
 	DELETE:
 		- Removed obsolete Lua scripts that haven't worked in years.
+		
+9/14/15
+
+	CHANGE:
+		- Fixed the missing text definitions in scripted tools due to obsolete code.
+		- Fixed spawnlist referencing some old broken models.

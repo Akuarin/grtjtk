@@ -239,19 +239,44 @@ return [[
 		"47"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h4.mdl"
+			"model"		"models/engine/crankcase_h2.mdl"
 		}
 		"48"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_4.mdl"
+			"model"		"models/engine/crankcase_h4.mdl"
 		}
 		"49"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_h4.mdl"
+			"model"		"models/engine/crankcase_h6.mdl"
 		}
 		"50"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_h8.mdl"
+		}
+		"51"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_h10.mdl"
+		}
+		"52"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_h12.mdl"
+		}
+		"53"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_4.mdl"
+		}
+		"54"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_h4.mdl"
+		}
+		"55"
 		{
 			"type"		"model"
 			"model"		"models/engine/oilpan_6.mdl"

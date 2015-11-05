@@ -64,7 +64,7 @@ return [[
 		"13"
 		{
 			"type"		"model"
-			"model"		"models/wings/elevator03.mdl"
+			"model"		"models/wings/elevator03a.mdl"
 		}
 		"14"
 		{

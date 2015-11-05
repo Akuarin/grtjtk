@@ -100,3 +100,25 @@
 	CHANGE:
 		- Fixed the missing text definitions in scripted tools due to obsolete code.
 		- Fixed spawnlist referencing some old broken models.
+		
+11/5/15
+
+	FIX:
+		- Fixed typo with model entry causing it not to spawn.
+		- Fixed some materials having broken normal maps.
+		
+	CHANGE:
+		- Recompiled fabric wings and ailerons with two additional skins (Iron Cross lower and upper.)
+		- Recompiled engine/crankcase_h4.mdl (4 cylinder H block) to fix weight bug.
+		
+	ADD:
+		- Added engine/crankcase_v16.mdl (16 cylinder V block)
+		- Added engine/crankcase_h2.mdl (2 cylinder H block)
+		- Added engine/crankcase_h6.mdl (6 cylinder H block)
+		- Added engine/crankcase_h8.mdl (8 cylinder H block)
+		- Added engine/crankcase_h10.mdl (10 cylinder H block)
+		- Added engine/crankcase_h12.mdl (12 cylinder H block)
+		- Added engine/crankshaft_88.mdl (8 throw crankshaft)
+		
+	DELETE:
+		- Removed legacy spawnlists and copy script as they're redundant.

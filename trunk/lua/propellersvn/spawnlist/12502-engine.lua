@@ -119,164 +119,174 @@ return [[
 		"23"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_1.mdl"
+			"model"		"models/engine/crankshaft_88.mdl"
 		}
 		"24"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_2.mdl"
+			"model"		"models/engine/cylhead_1.mdl"
 		}
 		"25"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_3.mdl"
+			"model"		"models/engine/cylhead_2.mdl"
 		}
 		"26"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_4.mdl"
+			"model"		"models/engine/cylhead_3.mdl"
 		}
 		"27"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_5.mdl"
+			"model"		"models/engine/cylhead_4.mdl"
 		}
 		"28"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_6.mdl"
+			"model"		"models/engine/cylhead_5.mdl"
 		}
 		"29"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_1h.mdl"
+			"model"		"models/engine/cylhead_6.mdl"
 		}
 		"30"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_2h.mdl"
+			"model"		"models/engine/cylhead_1h.mdl"
 		}
 		"31"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_4h.mdl"
+			"model"		"models/engine/cylhead_2h.mdl"
 		}
 		"32"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_81.mdl"
+			"model"		"models/engine/cylhead_4h.mdl"
 		}
 		"33"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_82.mdl"
+			"model"		"models/engine/cylhead_81.mdl"
 		}
 		"34"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_83.mdl"
+			"model"		"models/engine/cylhead_82.mdl"
 		}
 		"35"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_84.mdl"
+			"model"		"models/engine/cylhead_83.mdl"
 		}
 		"36"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_85.mdl"
+			"model"		"models/engine/cylhead_84.mdl"
 		}
 		"37"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_86.mdl"
+			"model"		"models/engine/cylhead_85.mdl"
 		}
 		"38"
 		{
 			"type"		"model"
-			"model"		"models/engine/flywheel_1.mdl"
+			"model"		"models/engine/cylhead_86.mdl"
 		}
 		"39"
 		{
 			"type"		"model"
-			"model"		"models/engine/flyfan_c.mdl"
+			"model"		"models/engine/flywheel_1.mdl"
 		}
 		"40"
 		{
 			"type"		"model"
-			"model"		"models/engine/flyfan_ccw.mdl"
+			"model"		"models/engine/flyfan_c.mdl"
 		}
 		"41"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_r7.mdl"
+			"model"		"models/engine/flyfan_ccw.mdl"
 		}
 		"42"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_r14.mdl"
+			"model"		"models/engine/crankcase_r7.mdl"
 		}
 		"43"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v6_60.mdl"
+			"model"		"models/engine/crankcase_r14.mdl"
 		}
 		"44"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v82.mdl"
+			"model"		"models/engine/crankcase_v6_60.mdl"
 		}
 		"45"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v122.mdl"
+			"model"		"models/engine/crankcase_v82.mdl"
 		}
 		"46"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v12_60.mdl"
+			"model"		"models/engine/crankcase_v122.mdl"
 		}
 		"47"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h2.mdl"
+			"model"		"models/engine/crankcase_v12_60.mdl"
 		}
 		"48"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h4.mdl"
+			"model"		"models/engine/crankcase_v16.mdl"
 		}
 		"49"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h6.mdl"
+			"model"		"models/engine/crankcase_h2.mdl"
 		}
 		"50"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h8.mdl"
+			"model"		"models/engine/crankcase_h4.mdl"
 		}
 		"51"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h10.mdl"
+			"model"		"models/engine/crankcase_h6.mdl"
 		}
 		"52"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h12.mdl"
+			"model"		"models/engine/crankcase_h8.mdl"
 		}
 		"53"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_4.mdl"
+			"model"		"models/engine/crankcase_h10.mdl"
 		}
 		"54"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_h4.mdl"
+			"model"		"models/engine/crankcase_h12.mdl"
 		}
 		"55"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_4.mdl"
+		}
+		"56"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_h4.mdl"
+		}
+		"57"
 		{
 			"type"		"model"
 			"model"		"models/engine/oilpan_6.mdl"

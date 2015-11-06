@@ -79,7 +79,7 @@ return [[
 		"12"
 		{
 			"type"		"model"
-			"model"		"models/wings/elevator03_flap.mdl"
+			"model"		"models/wings/elevator03a_flap.mdl"
 		}
 	}
 	"name"		"Wings"

@@ -35,11 +35,13 @@ wingToolData.airDensity    		= 1.225
 wingToolData.waterDensity         = 1000
 wingToolData.liftCoefficient        = 1
 wingToolData.dragCoefficient        = 0.5
+wingToolData.axis       			= "0"
 
 TOOL.ClientConVar[ "lift" ] = wingToolData.liftCoefficient
 TOOL.ClientConVar[ "drag" ] = wingToolData.dragCoefficient
 TOOL.ClientConVar[ "area" ] = 0.5
 TOOL.ClientConVar[ "include_area" ] = 0
+TOOL.ClientConVar[ "axis" ] = "0"
 
 wingEnts = {}
 wingTime = CurTime()
@@ -51,6 +53,8 @@ function TOOL.BuildCPanel( CPanel )
     CPanel:AddControl( "Slider", { Label = "#Lift Coefficient", Type = "Float", Min = "0", Max = "20", Command = "wing_lift" } )
     CPanel:AddControl( "Slider", { Label = "#Drag Coefficient", Type = "Float", Min = "0", Max = "20", Command = "wing_drag" } )
     CPanel:AddControl( "Slider", { Label = "#Wing Area", Type = "Float", Min = "0", Max = "20", Command = "wing_area" } )
+	CPanel:AddControl( "Label", { Text = "If your wing doesn't work, try changing the axis." } )
+	CPanel:AddControl( "ComboBox", { Label = "Lift Axis", Options = list.Get( "WingSpawnFlags" ) } )
     CPanel:AddControl( "Checkbox", { Label = "#Allow tool to modify wing area", Command = "wing_include_area" } )
 
 end
@@ -75,6 +79,24 @@ function TOOL:LeftClick( tr )
     local bone    = tr.PhysicsBone
     local entid  = ent:EntIndex()
     local user    = self:GetOwner()
+	
+	-- if ( IsValid( button ) ) then
+	-- 	button:Remove()
+	-- end
+	
+	--/button = ents.Create( "env_laser" )
+	-- if ( !IsValid( button ) ) then return end
+	
+	-- button:SetKeyValue( "spawnflags", "1" )
+	-- button:SetKeyValue( "width", "2" )
+	-- button:SetKeyValue( "texturescroll", "25" )
+	-- button:SetKeyValue( "texture", "sprites/laserbeam.spr" )
+	-- button:SetKeyValue( "lasertarget", "wingentity01" )
+	-- button:SetKeyValue( "renderamt", "150" )
+	-- button:SetKeyValue( "rendercolor", "0 100 200" )
+	-- button:SetKeyValue( "targetname", "testbeam" )
+	
+	-- button:Spawn()
 
     -- new wing with defaults
     if ( !wingEnts[entid] ) then
@@ -86,7 +108,8 @@ function TOOL:LeftClick( tr )
         wingEnts[entid].area    = wingToolData.wingArea * ent:GetPhysicsObjectNum( bone ):GetMass()
         wingEnts[entid].lift    = wingToolData.liftCoefficient
         wingEnts[entid].drag    = wingToolData.dragCoefficient
-
+		wingEnts[entid].axis	= wingToolData.axis
+		
         -- 255 byte message limit?
         user:SendLua("GAMEMODE:AddNotify(\"Wing created! (default settings)\", NOTIFY_GENERIC, 7); " ..
                      "surface.PlaySound( \"ambient/water/drip\"..math.random(1, 4)..\".wav\" )" )
@@ -95,6 +118,7 @@ function TOOL:LeftClick( tr )
     else
         wingEnts[entid].drag = tonumber(self:GetClientInfo( "drag" ))
         wingEnts[entid].lift = tonumber(self:GetClientInfo( "lift" ))
+		wingEnts[entid].axis = tostring(self:GetClientInfo( "axis" ))
 		if ( tonumber(self:GetClientInfo( "include_area" )) != 0 ) then
 			wingEnts[entid].area = tonumber(self:GetClientInfo( "area" ))
 		end
@@ -148,6 +172,7 @@ function TOOL:RightClick( tr )
     user:ConCommand( "wing_area " .. wingEnts[entid].area )
     user:ConCommand( "wing_drag " .. wingEnts[entid].drag )
     user:ConCommand( "wing_lift " .. wingEnts[entid].lift )
+	user:ConCommand( "wing_axis " .. wingEnts[entid].axis )
 
     -- 255 byte message limit?
     user:SendLua( "GAMEMODE:AddNotify(\"Wing #" .. entid .. " Settings:\", NOTIFY_GENERIC, 7);" )
@@ -156,6 +181,7 @@ function TOOL:RightClick( tr )
     user:SendLua( "GAMEMODE:AddNotify(\"Area: " .. wingEnts[entid].area .. " (Def: " .. wingToolData.wingArea *
                                                   wingEnts[entid].ent:GetPhysicsObjectNum( bone ):GetMass()
                                                   .. ")\", NOTIFY_GENERIC, 7);" )
+	user:SendLua( "GAMEMODE:AddNotify(\"Axis: " .. wingEnts[entid].axis .. " (Def: 0 0 0)\", NOTIFY_GENERIC, 7);" )
     user:SendLua( "surface.PlaySound( \"ambient/water/drip\"..math.random(1, 4)..\".wav\" )" )
 
     return true
@@ -178,9 +204,25 @@ function wingToolThink()
 
                 -- Calculate wing velocity
                 local pos         = wingData.ent:GetPos()
-                local ang         = wingData.ent:GetForward()
+                local ang         = "Vector(0, 0, 0)"
+				
+				local case = tonumber( wingEnts[entid].axis )
+				
+				if case == 0 then
+					ang = wingData.ent:GetForward()
+				elseif case == 1 then
+					ang = wingData.ent:GetUp()
+				elseif case == 2 then
+					ang = wingData.ent:GetRight()
+				elseif case >= 3 then
+					return 1
+				end
+				
                 local velocity    = ang:DotProduct( wingData.pos - pos ) / timeDiff
-                local direction   = Vector( 0, 0, 0 )
+				
+				-- button:SetPos( wingData.ent:GetPos() + ang * 50)
+				
+				local direction   = Vector( 0, 0, 0 )
 
                 if velocity != 0 then
                     direction = ( wingData.pos - pos )
@@ -216,7 +258,6 @@ function wingToolThink()
 
                 -- Entity doesn't exist, remove it from the table
                 wingEnts[entid] = nil
-
             end
         end
     end
@@ -224,3 +265,7 @@ function wingToolThink()
 end
 
 if ( SERVER ) then hook.Add( "Think", "wingToolThink()", wingToolThink ) end
+
+list.Set( "WingSpawnFlags", "Forward/Backward (Default)", { wing_axis = "0" } )
+list.Set( "WingSpawnFlags", "Up/Down", { wing_axis = "1" } )
+list.Set( "WingSpawnFlags", "Right/Left", { wing_axis = "2" } )

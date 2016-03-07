@@ -26,6 +26,11 @@ return [[
 			"type"		"model"
 			"model"		"models/misc/dh2_boom.mdl"
 		}
+		"5"
+		{
+			"type"		"model"
+			"model"		"models/misc/cargo_container01d.mdl"
+		}
 	}
 	"name"		"Misc"
 	"version"		"3"

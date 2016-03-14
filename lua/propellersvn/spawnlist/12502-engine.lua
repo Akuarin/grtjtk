@@ -289,49 +289,79 @@ return [[
 		"57"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_2.mdl"
+			"model"		"models/engine/crankcase_i1.mdl"
 		}
 		"58"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_h4.mdl"
+			"model"		"models/engine/crankcase_i2.mdl"
 		}
 		"59"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_3.mdl"
+			"model"		"models/engine/crankcase_i3.mdl"
 		}
 		"60"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_4.mdl"
+			"model"		"models/engine/crankcase_i4.mdl"
 		}
 		"61"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_5.mdl"
+			"model"		"models/engine/crankcase_i5.mdl"
 		}
 		"62"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_6.mdl"
+			"model"		"models/engine/crankcase_i6.mdl"
 		}
 		"63"
 		{
 			"type"		"model"
-			"model"		"models/engine/conrod01a.mdl"
+			"model"		"models/engine/oilpan_2.mdl"
 		}
 		"64"
 		{
 			"type"		"model"
-			"model"		"models/engine/conrod01b.mdl"
+			"model"		"models/engine/oilpan_h4.mdl"
 		}
 		"65"
 		{
 			"type"		"model"
-			"model"		"models/engine/conrod01a_cap.mdl"
+			"model"		"models/engine/oilpan_3.mdl"
 		}
 		"66"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_4.mdl"
+		}
+		"67"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_5.mdl"
+		}
+		"68"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_6.mdl"
+		}
+		"69"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod01a.mdl"
+		}
+		"70"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod01b.mdl"
+		}
+		"71"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod01a_cap.mdl"
+		}
+		"72"
 		{
 			"type"		"model"
 			"model"		"models/engine/conrod01b_cap.mdl"

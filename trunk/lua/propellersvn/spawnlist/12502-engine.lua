@@ -364,7 +364,27 @@ return [[
 		"72"
 		{
 			"type"		"model"
-			"model"		"models/engine/conrod01b_cap.mdl"
+			"model"		"models/engine/conrod02a.mdl"
+		}
+		"73"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod02b.mdl"
+		}
+		"74"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r9.mdl"
+		}
+		"75"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r18.mdl"
+		}
+		"76"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r9_cone.mdl"
 		}
 	}
 	"name"		"Engine"

@@ -114,274 +114,284 @@ return [[
 		"22"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankshaft_85.mdl"
+			"model"		"models/engine/crankshaft_84_c3.mdl"
 		}
 		"23"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankshaft_86.mdl"
+			"model"		"models/engine/crankshaft_85.mdl"
 		}
 		"24"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankshaft_88.mdl"
+			"model"		"models/engine/crankshaft_86.mdl"
 		}
 		"25"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_1.mdl"
+			"model"		"models/engine/crankshaft_88.mdl"
 		}
 		"26"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_2.mdl"
+			"model"		"models/engine/cylhead_1.mdl"
 		}
 		"27"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_3.mdl"
+			"model"		"models/engine/cylhead_2.mdl"
 		}
 		"28"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_4.mdl"
+			"model"		"models/engine/cylhead_3.mdl"
 		}
 		"29"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_5.mdl"
+			"model"		"models/engine/cylhead_4.mdl"
 		}
 		"30"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_6.mdl"
+			"model"		"models/engine/cylhead_5.mdl"
 		}
 		"31"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_1h.mdl"
+			"model"		"models/engine/cylhead_6.mdl"
 		}
 		"32"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_2h.mdl"
+			"model"		"models/engine/cylhead_1h.mdl"
 		}
 		"33"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_4h.mdl"
+			"model"		"models/engine/cylhead_2h.mdl"
 		}
 		"34"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_81.mdl"
+			"model"		"models/engine/cylhead_4h.mdl"
 		}
 		"35"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_82.mdl"
+			"model"		"models/engine/cylhead_81.mdl"
 		}
 		"36"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_83.mdl"
+			"model"		"models/engine/cylhead_82.mdl"
 		}
 		"37"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_84.mdl"
+			"model"		"models/engine/cylhead_83.mdl"
 		}
 		"38"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_85.mdl"
+			"model"		"models/engine/cylhead_84.mdl"
 		}
 		"39"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_86.mdl"
+			"model"		"models/engine/cylhead_85.mdl"
 		}
 		"40"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylhead_88.mdl"
+			"model"		"models/engine/cylhead_86.mdl"
 		}
 		"41"
 		{
 			"type"		"model"
-			"model"		"models/engine/flywheel_1.mdl"
+			"model"		"models/engine/cylhead_88.mdl"
 		}
 		"42"
 		{
 			"type"		"model"
-			"model"		"models/engine/flyfan_c.mdl"
+			"model"		"models/engine/flywheel_1.mdl"
 		}
 		"43"
 		{
 			"type"		"model"
-			"model"		"models/engine/flyfan_ccw.mdl"
+			"model"		"models/engine/flyfan_c.mdl"
 		}
 		"44"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_r7.mdl"
+			"model"		"models/engine/flyfan_ccw.mdl"
 		}
 		"45"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_r14.mdl"
+			"model"		"models/engine/crankcase_r7.mdl"
 		}
 		"46"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v6_60.mdl"
+			"model"		"models/engine/crankcase_r14.mdl"
 		}
 		"47"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v82.mdl"
+			"model"		"models/engine/crankcase_v6_60.mdl"
 		}
 		"48"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v122.mdl"
+			"model"		"models/engine/crankcase_v82.mdl"
 		}
 		"49"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v12_60.mdl"
+			"model"		"models/engine/crankcase_v122.mdl"
 		}
 		"50"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v16.mdl"
+			"model"		"models/engine/crankcase_v12_60.mdl"
 		}
 		"51"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h2.mdl"
+			"model"		"models/engine/crankcase_v16.mdl"
 		}
 		"52"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h4.mdl"
+			"model"		"models/engine/crankcase_h2.mdl"
 		}
 		"53"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h6.mdl"
+			"model"		"models/engine/crankcase_h4.mdl"
 		}
 		"54"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h8.mdl"
+			"model"		"models/engine/crankcase_h6.mdl"
 		}
 		"55"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h10.mdl"
+			"model"		"models/engine/crankcase_h8.mdl"
 		}
 		"56"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_h12.mdl"
+			"model"		"models/engine/crankcase_h10.mdl"
 		}
 		"57"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_i1.mdl"
+			"model"		"models/engine/crankcase_h12.mdl"
 		}
 		"58"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_i2.mdl"
+			"model"		"models/engine/crankcase_i1.mdl"
 		}
 		"59"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_i3.mdl"
+			"model"		"models/engine/crankcase_i2.mdl"
 		}
 		"60"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_i4.mdl"
+			"model"		"models/engine/crankcase_i3.mdl"
 		}
 		"61"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_i5.mdl"
+			"model"		"models/engine/crankcase_i4.mdl"
 		}
 		"62"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_i6.mdl"
+			"model"		"models/engine/crankcase_i5.mdl"
 		}
 		"63"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_2.mdl"
+			"model"		"models/engine/crankcase_i6.mdl"
 		}
 		"64"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_h4.mdl"
+			"model"		"models/engine/oilpan_2.mdl"
 		}
 		"65"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_3.mdl"
+			"model"		"models/engine/oilpan_h4.mdl"
 		}
 		"66"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_4.mdl"
+			"model"		"models/engine/oilpan_3.mdl"
 		}
 		"67"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_5.mdl"
+			"model"		"models/engine/oilpan_4.mdl"
 		}
 		"68"
 		{
 			"type"		"model"
-			"model"		"models/engine/oilpan_6.mdl"
+			"model"		"models/engine/oilpan_5.mdl"
 		}
 		"69"
 		{
 			"type"		"model"
-			"model"		"models/engine/conrod01a.mdl"
+			"model"		"models/engine/oilpan_6.mdl"
 		}
 		"70"
 		{
 			"type"		"model"
-			"model"		"models/engine/conrod01b.mdl"
+			"model"		"models/engine/conrod01a.mdl"
 		}
 		"71"
 		{
 			"type"		"model"
-			"model"		"models/engine/conrod01a_cap.mdl"
+			"model"		"models/engine/conrod01b.mdl"
 		}
 		"72"
 		{
 			"type"		"model"
-			"model"		"models/engine/conrod02a.mdl"
+			"model"		"models/engine/conrod01a_cap.mdl"
 		}
 		"73"
 		{
 			"type"		"model"
-			"model"		"models/engine/conrod02b.mdl"
+			"model"		"models/engine/conrod01b_cap.mdl"
 		}
 		"74"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_r9.mdl"
+			"model"		"models/engine/conrod02a.mdl"
 		}
 		"75"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_r18.mdl"
+			"model"		"models/engine/conrod02b.mdl"
 		}
 		"76"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r9.mdl"
+		}
+		"77"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r18.mdl"
+		}
+		"78"
 		{
 			"type"		"model"
 			"model"		"models/engine/crankcase_r9_cone.mdl"

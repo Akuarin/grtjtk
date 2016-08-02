@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/half-life/generic009"
+	"$bumpmap"		"models/half-life/generic009_normal"
+	
+	"$surfaceprop"	"metal_box"
+	
+	"$detail"		"models/detail/paint1"
+	"$detailscale"	"4"
+}

@@ -31,6 +31,16 @@ return [[
 			"type"		"model"
 			"model"		"models/misc/cargo_container01d.mdl"
 		}
+		"6"
+		{
+			"type"		"model"
+			"model"		"models/misc/crusher01.mdl"
+		}
+		"7"
+		{
+			"type"		"model"
+			"model"		"models/misc/crusher_hopper01.mdl"
+		}		
 	}
 	"name"		"Misc"
 	"version"		"3"

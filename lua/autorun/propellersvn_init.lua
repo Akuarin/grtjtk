@@ -12,18 +12,19 @@ if SERVER then
 
 else
 
-	CreateClientConVar( "propellersvn_autolist", 1 )
+	local varAutoList = CreateClientConVar( "propellersvn_autolist", 1 )
 
 	local function PropSVNPopulate()
-		if not tobool( LocalPlayer():GetInfoNum( "propellersvn_autolist", 1 ) ) then return end
+	if not varAutoList:GetBool() then return end
 
-		local ListTable = file.Find( "propellersvn/spawnlist/*.lua", "LUA" )
-		for _, TempList in pairs( ListTable ) do
-			local ListData = util.KeyValuesToTable( CompileFile( "propellersvn/spawnlist/" .. TempList )() )
+	local ListTable = file.Find( "propellersvn/spawnlist/*.lua", "LUA" )
+	for _, TempList in pairs( ListTable ) do
+		local ListData = util.KeyValuesToTable( CompileFile( "propellersvn/spawnlist/" .. TempList )() )
 
-			spawnmenu.AddPropCategory( "settings/spawnlist/" .. TempList, ListData.name, ListData.contents, ListData.icon, ListData.id, ListData.parentid )
-		end
+		spawnmenu.AddPropCategory( "settings/spawnlist/" .. TempList, ListData.name, ListData.contents, ListData.icon, ListData.id, ListData.parentid )
 	end
+end
+
 	hook.Add( "PopulatePropMenu", "PropSVNPopulate", PropSVNPopulate )
 
 end

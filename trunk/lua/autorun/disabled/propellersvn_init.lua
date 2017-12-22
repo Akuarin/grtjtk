@@ -12,7 +12,7 @@ if SERVER then
 
 else
 
-	local varAutoList = CreateClientConVar( "propellersvn_autolist", 1 )
+	 local varAutoList = CreateClientConVar( "propellersvn_autolist", "1", true, false )
 
 	local function PropSVNPopulate()
 	if not varAutoList:GetBool() then return end

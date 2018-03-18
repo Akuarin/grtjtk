@@ -1,0 +1,91 @@
+"TableToKeyValues"
+{
+	"parentid"		"45"
+	"icon"		"icon16/folder_delete.png"
+	"id"		"46"
+	"contents"
+	{
+		"1"
+		{
+			"type"		"model"
+			"model"		"models/engine/bentley_br1.mdl"
+		}
+		"2"
+		{
+			"type"		"model"
+			"model"		"models/engine/bentley_br2.mdl"
+		}
+		"3"
+		{
+			"type"		"model"
+			"model"		"models/engine/connecting_rod01a.mdl"
+		}
+		"4"
+		{
+			"type"		"model"
+			"model"		"models/engine/connecting_rod01b.mdl"
+		}
+		"5"
+		{
+			"type"		"model"
+			"model"		"models/engine/cowling01.mdl"
+		}
+		"6"
+		{
+			"type"		"model"
+			"model"		"models/engine/cowling02.mdl"
+		}
+		"7"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_v8.mdl"
+		}
+		"8"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_4_measure.mdl"
+		}
+		"9"
+		{
+			"type"		"model"
+			"model"		"models/engine/engine_base.mdl"
+		}
+		"10"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylinder03.mdl"
+		}
+		"11"
+		{
+			"type"		"model"
+			"model"		"models/engine/piston02.mdl"
+		}
+		"12"
+		{
+			"type"		"model"
+			"model"		"models/engine/head_1.mdl"
+		}
+		"13"
+		{
+			"type"		"model"
+			"model"		"models/engine/head_2.mdl"
+		}
+		"14"
+		{
+			"type"		"model"
+			"model"		"models/engine/head_3.mdl"
+		}
+		"15"
+		{
+			"type"		"model"
+			"model"		"models/engine/head_4.mdl"
+		}
+		"16"
+		{
+			"type"		"model"
+			"model"		"models/engine/head_6.mdl"
+		}
+	}
+	"name"		"Legacy"
+	"version"		"3"
+}

@@ -1,0 +1,8 @@
+"TableToKeyValues"
+{
+	"parentid"		"0"
+	"icon"		"icon16/brick.png"
+	"id"		"45"
+	"name"		"Propeller Model Pack"
+	"version"		"3"
+}

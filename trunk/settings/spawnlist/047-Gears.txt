@@ -1,0 +1,86 @@
+"TableToKeyValues"
+{
+	"parentid"		"45"
+	"icon"		"icon16/cog.png"
+	"id"		"47"
+	"contents"
+	{
+		"1"
+		{
+			"type"		"model"
+			"model"		"models/gears/helical_6.mdl"
+		}
+		"2"
+		{
+			"type"		"model"
+			"model"		"models/gears/helical_6_16.mdl"
+		}
+		"3"
+		{
+			"type"		"model"
+			"model"		"models/gears/helical_6r.mdl"
+		}
+		"4"
+		{
+			"type"		"model"
+			"model"		"models/gears/helical_6r_16.mdl"
+		}
+		"5"
+		{
+			"type"		"model"
+			"model"		"models/gears/planet_16.mdl"
+		}
+		"6"
+		{
+			"type"		"model"
+			"model"		"models/gears/planet_mount.mdl"
+		}
+		"7"
+		{
+			"type"		"model"
+			"model"		"models/gears/gear_3.mdl"
+		}
+		"8"
+		{
+			"type"		"model"
+			"model"		"models/gears/gear_6.mdl"
+		}
+		"9"
+		{
+			"type"		"model"
+			"model"		"models/gears/gear_12.mdl"
+		}
+		"10"
+		{
+			"type"		"model"
+			"model"		"models/gears/gear_24.mdl"
+		}
+		"11"
+		{
+			"type"		"model"
+			"model"		"models/gears/gear_s_8.mdl"
+		}
+		"12"
+		{
+			"type"		"model"
+			"model"		"models/gears/gear_s_9.mdl"
+		}
+		"13"
+		{
+			"type"		"model"
+			"model"		"models/gears/gear_s_10.mdl"
+		}
+		"14"
+		{
+			"type"		"model"
+			"model"		"models/gears/planet_s_carrier_27.mdl"
+		}
+		"15"
+		{
+			"type"		"model"
+			"model"		"models/gears/planet_s_27.mdl"
+		}
+	}
+	"name"		"Gears"
+	"version"		"3"
+}

@@ -1,0 +1,316 @@
+"TableToKeyValues"
+{
+	"parentid"		"27500"
+	"icon"		"icon16/asterisk_yellow.png"
+	"id"		"27506"
+	"contents"
+	{
+		"1"
+		{
+			"type"		"header"
+			"text"		"Metal (CCW)"
+		}
+		"2"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller2x.mdl"
+		}
+		"3"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller3x.mdl"
+		}
+		"4"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller3xc.mdl"
+		}
+		"5"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller4x.mdl"
+		}
+		"6"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller5x.mdl"
+		}
+		"7"
+		{
+			"type"		"model"
+			"model"		"models/propellers/scoop_propeller4x.mdl"
+		}
+		"8"
+		{
+			"type"		"model"
+			"model"		"models/propellers/scoop_propeller4x_black.mdl"
+		}
+		"9"
+		{
+			"type"		"header"
+			"text"		"Metal (CW)"
+		}
+		"10"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller2xr.mdl"
+		}
+		"11"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller3xr.mdl"
+		}
+		"12"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller3xcr.mdl"
+		}
+		"13"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller4xr.mdl"
+		}
+		"14"
+		{
+			"type"		"model"
+			"model"		"models/propellers/propeller5xr.mdl"
+		}
+		"15"
+		{
+			"type"		"model"
+			"model"		"models/propellers/scoop_propeller4xr.mdl"
+		}
+		"16"
+		{
+			"type"		"model"
+			"model"		"models/propellers/scoop_propeller4xr_black.mdl"
+		}
+		"17"
+		{
+			"type"		"header"
+			"text"		"Wood (CCW)"
+		}
+		"18"
+		{
+			"type"		"model"
+			"model"		"models/propellers/wood_prop.mdl"
+		}
+		"19"
+		{
+			"type"		"model"
+			"model"		"models/propellers/airboatprop_72x45_ccw.mdl"
+		}
+		"20"
+		{
+			"type"		"model"
+			"model"		"models/propellers/wood_prop2.mdl"
+		}
+		"21"
+		{
+			"type"		"model"
+			"model"		"models/propellers/woodprop_70x45_ccw.mdl"
+		}
+		"22"
+		{
+			"type"		"model"
+			"model"		"models/propellers/woodprop_70x45_ccw_p.mdl"
+		}
+		"23"
+		{
+			"type"		"model"
+			"model"		"models/propellers/woodprop4_70x45_ccw.mdl"
+		}
+		"24"
+		{
+			"type"		"header"
+			"text"		"Wood (CW)"
+		}
+		"25"
+		{
+			"type"		"model"
+			"model"		"models/propellers/wood_propr.mdl"
+		}
+		"26"
+		{
+			"type"		"model"
+			"model"		"models/propellers/airboatprop_72x45_cw.mdl"
+		}
+		"27"
+		{
+			"type"		"model"
+			"model"		"models/propellers/wood_prop2r.mdl"
+		}
+		"28"
+		{
+			"type"		"model"
+			"model"		"models/propellers/woodprop_70x45_cw.mdl"
+		}
+		"29"
+		{
+			"type"		"model"
+			"model"		"models/propellers/woodprop_70x45_cw_p.mdl"
+		}
+		"30"
+		{
+			"type"		"header"
+			"text"		"Propeller Hubs"
+		}
+		"31"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor2x.mdl"
+		}
+		"32"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor3x.mdl"
+		}
+		"33"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor4x.mdl"
+		}
+		"34"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor5x.mdl"
+		}
+		"35"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor_2b.mdl"
+		}
+		"36"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor_2b_coax.mdl"
+		}
+		"37"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor_3b.mdl"
+		}
+		"38"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor_3b_coax.mdl"
+		}
+		"39"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor_4b.mdl"
+		}
+		"40"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor_4b_coax.mdl"
+		}
+		"41"
+		{
+			"type"		"model"
+			"model"		"models/propellers/rotor_5b.mdl"
+		}
+		"42"
+		{
+			"type"		"header"
+			"text"		"Blades"
+		}
+		"43"
+		{
+			"type"		"model"
+			"model"		"models/propellers/45x35x27_ccw.mdl"
+		}
+		"44"
+		{
+			"type"		"model"
+			"model"		"models/propellers/45x35x27_cw.mdl"
+		}
+		"45"
+		{
+			"type"		"model"
+			"model"		"models/propellers/60x35x27_ccw.mdl"
+		}
+		"46"
+		{
+			"type"		"model"
+			"model"		"models/propellers/60x35x27_cw.mdl"
+		}
+		"47"
+		{
+			"type"		"model"
+			"model"		"models/propellers/blade.mdl"
+		}
+		"48"
+		{
+			"type"		"model"
+			"model"		"models/propellers/blade_twist.mdl"
+		}
+		"49"
+		{
+			"type"		"model"
+			"model"		"models/propellers/blade_twistr.mdl"
+		}
+		"50"
+		{
+			"type"		"model"
+			"model"		"models/propellers/paddle_prop.mdl"
+		}
+		"51"
+		{
+			"type"		"model"
+			"model"		"models/propellers/paddle_propr.mdl"
+		}
+		"52"
+		{
+			"type"		"model"
+			"model"		"models/propellers/small_propeller.mdl"
+		}
+		"53"
+		{
+			"type"		"model"
+			"model"		"models/propellers/small_propellerr.mdl"
+		}
+		"54"
+		{
+			"type"		"header"
+			"text"		"Spinners"
+		}
+		"55"
+		{
+			"type"		"model"
+			"model"		"models/propellers/spinner_2b.mdl"
+		}
+		"56"
+		{
+			"type"		"model"
+			"model"		"models/propellers/spinner_2b_coax.mdl"
+		}
+		"57"
+		{
+			"type"		"model"
+			"model"		"models/propellers/spinner_3b.mdl"
+		}
+		"58"
+		{
+			"type"		"model"
+			"model"		"models/propellers/spinner_3b_coax.mdl"
+		}
+		"59"
+		{
+			"type"		"model"
+			"model"		"models/propellers/spinner_4b.mdl"
+		}
+		"60"
+		{
+			"type"		"model"
+			"model"		"models/propellers/spinner_4b_coax.mdl"
+		}
+		"61"
+		{
+			"type"		"model"
+			"model"		"models/propellers/spinner_5b.mdl"
+		}
+	}
+	"name"		"Propellers"
+	"version"		"3"
+}

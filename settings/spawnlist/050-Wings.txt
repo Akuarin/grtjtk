@@ -1,0 +1,159 @@
+"TableToKeyValues"
+{
+	"parentid"		"45"
+	"icon"		"icon16/page_white_actionscript.png"
+	"id"		"50"
+	"contents"
+	{
+		"1"
+		{
+			"type"		"header"
+			"text"		"Wings"
+		}
+		"2"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing01.mdl"
+		}
+		"3"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing01.mdl"
+			"skin"		"1"
+		}
+		"4"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing01.mdl"
+			"skin"		"2"
+		}
+		"5"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing01.mdl"
+			"skin"		"4"
+		}
+		"6"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing01.mdl"
+			"skin"		"3"
+		}
+		"7"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing02.mdl"
+		}
+		"8"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing02.mdl"
+			"skin"		"1"
+		}
+		"9"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing02.mdl"
+			"skin"		"2"
+		}
+		"10"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing02.mdl"
+			"skin"		"4"
+		}
+		"11"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing02.mdl"
+			"skin"		"3"
+		}
+		"12"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing_bridge01.mdl"
+		}
+		"13"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing_bridge02.mdl"
+		}
+		"14"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing_bridge03.mdl"
+		}
+		"15"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing04.mdl"
+		}
+		"16"
+		{
+			"type"		"model"
+			"model"		"models/wings/wing03.mdl"
+		}
+		"17"
+		{
+			"type"		"header"
+			"text"		"Ailerons"
+		}
+		"18"
+		{
+			"type"		"model"
+			"model"		"models/wings/flap01.mdl"
+		}
+		"19"
+		{
+			"type"		"model"
+			"model"		"models/wings/flap02.mdl"
+		}
+		"20"
+		{
+			"type"		"header"
+			"text"		"Elevator"
+		}
+		"21"
+		{
+			"type"		"model"
+			"model"		"models/wings/elevator01.mdl"
+		}
+		"22"
+		{
+			"type"		"model"
+			"model"		"models/wings/elevator02.mdl"
+		}
+		"23"
+		{
+			"type"		"header"
+			"text"		"Flaps"
+		}
+		"24"
+		{
+			"type"		"model"
+			"model"		"models/wings/elevator02_flap.mdl"
+		}
+		"25"
+		{
+			"type"		"model"
+			"model"		"models/wings/elevator01_flap.mdl"
+		}
+		"26"
+		{
+			"type"		"header"
+			"text"		"Rudders"
+		}
+		"27"
+		{
+			"type"		"model"
+			"model"		"models/wings/elevator03a_flap.mdl"
+		}
+		"28"
+		{
+			"type"		"model"
+			"model"		"models/wings/elevator03a.mdl"
+		}
+	}
+	"name"		"Wings"
+	"version"		"3"
+}

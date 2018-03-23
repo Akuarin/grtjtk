@@ -7,83 +7,133 @@
 	{
 		"1"
 		{
-			"type"		"model"
-			"model"		"models/engine/bentley_br1.mdl"
+			"type"		"header"
+			"text"		"Legacy props"
 		}
 		"2"
 		{
 			"type"		"model"
-			"model"		"models/engine/bentley_br2.mdl"
+			"model"		"models/engine/bentley_br1.mdl"
 		}
 		"3"
 		{
 			"type"		"model"
-			"model"		"models/engine/connecting_rod01a.mdl"
+			"model"		"models/engine/bentley_br2.mdl"
 		}
 		"4"
 		{
 			"type"		"model"
-			"model"		"models/engine/connecting_rod01b.mdl"
+			"model"		"models/engine/connecting_rod01a.mdl"
 		}
 		"5"
 		{
 			"type"		"model"
-			"model"		"models/engine/cowling01.mdl"
+			"model"		"models/engine/connecting_rod01b.mdl"
 		}
 		"6"
 		{
 			"type"		"model"
-			"model"		"models/engine/cowling02.mdl"
+			"model"		"models/engine/cowling01.mdl"
 		}
 		"7"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankcase_v8.mdl"
+			"model"		"models/engine/cowling02.mdl"
 		}
 		"8"
 		{
 			"type"		"model"
-			"model"		"models/engine/crankshaft_4_measure.mdl"
+			"model"		"models/engine/crankcase_v8.mdl"
 		}
 		"9"
 		{
 			"type"		"model"
-			"model"		"models/engine/engine_base.mdl"
+			"model"		"models/engine/crankshaft_4_measure.mdl"
 		}
 		"10"
 		{
 			"type"		"model"
-			"model"		"models/engine/cylinder03.mdl"
+			"model"		"models/engine/engine_base.mdl"
 		}
 		"11"
 		{
 			"type"		"model"
-			"model"		"models/engine/piston02.mdl"
+			"model"		"models/engine/cylinder03.mdl"
 		}
 		"12"
 		{
 			"type"		"model"
-			"model"		"models/engine/head_1.mdl"
+			"model"		"models/engine/piston02.mdl"
 		}
 		"13"
 		{
 			"type"		"model"
-			"model"		"models/engine/head_2.mdl"
+			"model"		"models/engine/head_1.mdl"
 		}
 		"14"
 		{
 			"type"		"model"
-			"model"		"models/engine/head_3.mdl"
+			"model"		"models/engine/head_2.mdl"
 		}
 		"15"
 		{
 			"type"		"model"
-			"model"		"models/engine/head_4.mdl"
+			"model"		"models/engine/head_3.mdl"
 		}
 		"16"
 		{
 			"type"		"model"
+			"model"		"models/engine/head_4.mdl"
+		}
+		"17"
+		{
+			"type"		"model"
 			"model"		"models/engine/head_6.mdl"
+		}
+		"18"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_1.mdl"
+		}
+		"19"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_1a.mdl"
+		}
+		"20"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_1b.mdl"
+		}
+		"21"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_2.mdl"
+		}
+		"22"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_3.mdl"
+		}
+		"23"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_4b.mdl"
+		}
+		"24"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_4_r4360.mdl"
+		}
+		"25"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_6.mdl"
+		}
+		"26"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft01.mdl"
 		}
 	}
 	"name"		"Legacy"

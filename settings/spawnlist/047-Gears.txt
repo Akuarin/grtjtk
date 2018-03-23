@@ -7,78 +7,98 @@
 	{
 		"1"
 		{
-			"type"		"model"
-			"model"		"models/gears/helical_6.mdl"
+			"type"		"header"
+			"text"		"Helical"
 		}
 		"2"
 		{
 			"type"		"model"
-			"model"		"models/gears/helical_6_16.mdl"
+			"model"		"models/gears/helical_6.mdl"
 		}
 		"3"
 		{
 			"type"		"model"
-			"model"		"models/gears/helical_6r.mdl"
+			"model"		"models/gears/helical_6_16.mdl"
 		}
 		"4"
 		{
 			"type"		"model"
-			"model"		"models/gears/helical_6r_16.mdl"
+			"model"		"models/gears/helical_6r.mdl"
 		}
 		"5"
 		{
 			"type"		"model"
-			"model"		"models/gears/planet_16.mdl"
+			"model"		"models/gears/helical_6r_16.mdl"
 		}
 		"6"
 		{
-			"type"		"model"
-			"model"		"models/gears/planet_mount.mdl"
+			"type"		"header"
+			"text"		"Spur"
 		}
 		"7"
 		{
 			"type"		"model"
-			"model"		"models/gears/gear_3.mdl"
+			"model"		"models/gears/planet_16.mdl"
 		}
 		"8"
 		{
 			"type"		"model"
-			"model"		"models/gears/gear_6.mdl"
+			"model"		"models/gears/planet_mount.mdl"
 		}
 		"9"
 		{
 			"type"		"model"
-			"model"		"models/gears/gear_12.mdl"
+			"model"		"models/gears/gear_3.mdl"
 		}
 		"10"
 		{
 			"type"		"model"
-			"model"		"models/gears/gear_24.mdl"
+			"model"		"models/gears/gear_6.mdl"
 		}
 		"11"
 		{
 			"type"		"model"
-			"model"		"models/gears/gear_s_8.mdl"
+			"model"		"models/gears/gear_12.mdl"
 		}
 		"12"
 		{
 			"type"		"model"
-			"model"		"models/gears/gear_s_9.mdl"
+			"model"		"models/gears/gear_24.mdl"
 		}
 		"13"
 		{
-			"type"		"model"
-			"model"		"models/gears/gear_s_10.mdl"
+			"type"		"header"
+			"text"		"Epicyclic"
 		}
 		"14"
 		{
 			"type"		"model"
-			"model"		"models/gears/planet_s_carrier_27.mdl"
+			"model"		"models/gears/gear_s_8.mdl"
 		}
 		"15"
 		{
 			"type"		"model"
+			"model"		"models/gears/gear_s_9.mdl"
+		}
+		"16"
+		{
+			"type"		"model"
+			"model"		"models/gears/gear_s_10.mdl"
+		}
+		"17"
+		{
+			"type"		"model"
+			"model"		"models/gears/planet_s_carrier_27.mdl"
+		}
+		"18"
+		{
+			"type"		"model"
 			"model"		"models/gears/planet_s_27.mdl"
+		}
+		"19"
+		{
+			"type"		"model"
+			"model"		"models/gears/planet_s_26.mdl"
 		}
 	}
 	"name"		"Gears"

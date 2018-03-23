@@ -1,0 +1,451 @@
+"TableToKeyValues"
+{
+	"parentid"		"27500"
+	"icon"		"icon16/newspaper.png"
+	"id"		"27504"
+	"contents"
+	{
+		"1"
+		{
+			"type"		"header"
+			"text"		"Inline Blocks"
+		}
+		"2"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_i1.mdl"
+		}
+		"3"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_i2.mdl"
+		}
+		"4"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_i3.mdl"
+		}
+		"5"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_i4.mdl"
+		}
+		"6"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_i5.mdl"
+		}
+		"7"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_i6.mdl"
+		}
+		"8"
+		{
+			"type"		"header"
+			"text"		"Horizontal Blocks"
+		}
+		"9"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_h2.mdl"
+		}
+		"10"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_h4.mdl"
+		}
+		"11"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_h6.mdl"
+		}
+		"12"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_h8.mdl"
+		}
+		"13"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_h10.mdl"
+		}
+		"14"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_h12.mdl"
+		}
+		"15"
+		{
+			"type"		"header"
+			"text"		"Vee Blocks"
+		}
+		"16"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_v6_60.mdl"
+		}
+		"17"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_v12_60.mdl"
+		}
+		"18"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_v82.mdl"
+		}
+		"19"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_v122.mdl"
+		}
+		"20"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_v16.mdl"
+		}
+		"21"
+		{
+			"type"		"header"
+			"text"		"Oil Pans"
+		}
+		"22"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_2.mdl"
+		}
+		"23"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_3.mdl"
+		}
+		"24"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_4.mdl"
+		}
+		"25"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_5.mdl"
+		}
+		"26"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_6.mdl"
+		}
+		"27"
+		{
+			"type"		"model"
+			"model"		"models/engine/oilpan_h4.mdl"
+		}
+		"28"
+		{
+			"type"		"header"
+			"text"		"Radial Blocks"
+		}
+		"29"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r7.mdl"
+		}
+		"30"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r14.mdl"
+		}
+		"31"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r9.mdl"
+		}
+		"32"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r18.mdl"
+		}
+		"33"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankcase_r9_cone.mdl"
+		}
+		"34"
+		{
+			"type"		"header"
+			"text"		"Crankshafts"
+		}
+		"35"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_61.mdl"
+		}
+		"36"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_62.mdl"
+		}
+		"37"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_64.mdl"
+		}
+		"38"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_64_c.mdl"
+		}
+		"39"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_81.mdl"
+		}
+		"40"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_82.mdl"
+		}
+		"41"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_83.mdl"
+		}
+		"42"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_84.mdl"
+		}
+		"43"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_84_c.mdl"
+		}
+		"44"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_84_c2.mdl"
+		}
+		"45"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_84_c3.mdl"
+		}
+		"46"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_85.mdl"
+		}
+		"47"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_86.mdl"
+		}
+		"48"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_88.mdl"
+		}
+		"49"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_e1.mdl"
+		}
+		"50"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_e2.mdl"
+		}
+		"51"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_e3.mdl"
+		}
+		"52"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_e4.mdl"
+		}
+		"53"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_e4_4360.mdl"
+		}
+		"54"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_e4_c.mdl"
+		}
+		"55"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_e5.mdl"
+		}
+		"56"
+		{
+			"type"		"model"
+			"model"		"models/engine/crankshaft_e6.mdl"
+		}
+		"57"
+		{
+			"type"		"header"
+			"text"		"Connecting Rods"
+		}
+		"58"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod01a.mdl"
+		}
+		"59"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod01a_cap.mdl"
+		}
+		"60"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod01b.mdl"
+		}
+		"61"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod01b_cap.mdl"
+		}
+		"62"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod02b.mdl"
+		}
+		"63"
+		{
+			"type"		"model"
+			"model"		"models/engine/conrod02a.mdl"
+		}
+		"64"
+		{
+			"type"		"header"
+			"text"		"Cylinder Heads"
+		}
+		"65"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_1.mdl"
+		}
+		"66"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_2.mdl"
+		}
+		"67"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_3.mdl"
+		}
+		"68"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_4.mdl"
+		}
+		"69"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_5.mdl"
+		}
+		"70"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_6.mdl"
+		}
+		"71"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_1h.mdl"
+		}
+		"72"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_2h.mdl"
+		}
+		"73"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_4h.mdl"
+		}
+		"74"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_81.mdl"
+		}
+		"75"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_82.mdl"
+		}
+		"76"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_83.mdl"
+		}
+		"77"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_84.mdl"
+		}
+		"78"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_85.mdl"
+		}
+		"79"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_86.mdl"
+		}
+		"80"
+		{
+			"type"		"model"
+			"model"		"models/engine/cylhead_88.mdl"
+		}
+		"81"
+		{
+			"type"		"header"
+			"text"		"Pistons"
+		}
+		"82"
+		{
+			"type"		"model"
+			"model"		"models/engine/piston_1.mdl"
+		}
+		"83"
+		{
+			"type"		"model"
+			"model"		"models/engine/piston_2.mdl"
+		}
+		"84"
+		{
+			"type"		"model"
+			"model"		"models/engine/piston_3.mdl"
+		}
+		"85"
+		{
+			"type"		"header"
+			"text"		"Accessories"
+		}
+		"86"
+		{
+			"type"		"model"
+			"model"		"models/engine/flywheel_1.mdl"
+		}
+		"87"
+		{
+			"type"		"model"
+			"model"		"models/engine/flyfan_c.mdl"
+		}
+		"88"
+		{
+			"type"		"model"
+			"model"		"models/engine/flyfan_ccw.mdl"
+		}
+	}
+	"name"		"Engine"
+	"version"		"3"
+}
